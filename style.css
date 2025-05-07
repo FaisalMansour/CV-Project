@@ -13,10 +13,58 @@ body{
     color: rgb(88, 198, 163);
     line-height: 1.6;
 }
-img{
+img {
     max-width: 100%;
     width: 100%;
     height: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .profile_container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .My_profile_picture {
+        max-width: 150px;
+    }
+
+    .CV_Experience,
+    .CV_Education,
+    .CV_skills,
+    .Personal_info,
+    .contact,
+    .certificates {
+        margin: 0;
+        text-align: center;
+    }
+
+    .CV_english,
+    .GPA,
+    .html_header,
+    .python_header {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .English_bar_header,
+    .GPA_bar_header,
+    .html_bar_header,
+    .python_bar_header {
+        width: 80%;
+        margin: 1rem auto;
+    }
 }
 a{
     text-decoration: none;
